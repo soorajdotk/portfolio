@@ -1,32 +1,57 @@
 import React from 'react';
-import logo from "../assets/assets/Logosr.png";
-import { FaLinkedin, FaGithub, FaInstagram, FaTwitter} from "react-icons/fa";
+import logo from "../assets/assets/Logo.png";
+import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="mb-20 flex items-center justify-between py-6">
-        <div className="flex flex-shrink-0 items-center">
-          <img className="mx-6 w-40" src={logo} alt="logo" />
-        </div>
-        <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-          <a href="https://www.linkedin.com/in/sooraj-k-b34633230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-          <a href="https://github.com/sooraj281" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter />
-          </a>
-          
-          
-        </div>
-      </nav>
-    </>
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-2 glass-panel border-b border-neutral-900 shadow-lg">
+      <div className="flex flex-shrink-0 items-center">
+        <a href="#hero">
+          <img className="h-12 w-auto opacity-95 hover:opacity-100 transition-opacity" src={logo} alt="Sooraj Logo" />
+        </a>
+      </div>
+
+      <div className="flex items-center gap-6 text-xl md:text-2xl text-neutral-400">
+        <a
+          href="https://linkedin.com/in/sooraj-k-b34633230/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-cyan-400 transition-colors"
+          title="LinkedIn Profile"
+          id="nav-linkedin"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/soorajdotk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-purple-400 transition-colors"
+          title="GitHub Profile"
+          id="nav-github"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://x.com/SoorajK76983"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-blue-400 transition-colors"
+          title="Twitter Profile"
+          id="nav-twitter"
+        >
+          <FaTwitter />
+        </a>
+        <a
+          href="mailto:soorajsoorajk136@gmail.com"
+          className="hover:text-pink-400 transition-colors"
+          title="Email Contact"
+          id="nav-email"
+        >
+          <FaEnvelope />
+        </a>
+      </div>
+    </nav>
   );
 };
 
