@@ -22,11 +22,11 @@ export const TIMELINE_EVENTS = [
     tags: ["React.js", "REST APIs", "Agile Development", "UI/UX Optimization"]
   },
   {
-    date: "2024 - 2026 (Pursuing)",
+    date: "2024 - 2026",
     title: "Master of Computer Applications (MCA)",
     subtitle: "Kannur University",
     category: "education",
-    description: "Specializing in software engineering, advanced databases, web technologies, and decentralized ledger concepts. Maintained an aggregate percentage of 70% in coursework.",
+    description: "Specializing in software engineering, advanced databases, web technologies concepts. Maintained an aggregate percentage of 75% in coursework.",
     tags: ["MCA", "Computer Science", "Database Systems"]
   },
   {
